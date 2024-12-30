@@ -1,0 +1,27 @@
+
+/*creats a URL for the used font*/
+@font-face 
+{
+    font-family: Montserrat-Regular;
+    src: url(fonts/Montserrat-Regular.ttf);
+}
+
+@font-face {
+    font-family: Lato-Regular;
+    src: url(Fonts/Lato-Regular.ttf);
+}
+
+h1
+{
+    /*if a website can't pick verdana as a font family, put a comma then a backup option*/
+    font-family: Lato-Regular, verdana, arial;
+}
+
+p
+{
+    font-family: "Montserrat-Regular", "lucida console", "courier new";
+    font-size: 12px;
+    /* font-size: 1em is 100% of the standar, 1.1 em is 110% of the standard*/
+    font-weight: bold;
+    font-style: italic; /*By default is normal*/
+}

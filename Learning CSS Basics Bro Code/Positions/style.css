@@ -1,0 +1,27 @@
+
+#box1
+{
+    width: 200px;
+    height: 200px;
+    background-color: rgb(56, 128, 230);
+    /*position: relaitve; /*Position based on where it relatively should be*/
+    /*top: 100px; /*pushed downwards 100 pixels from where it normally is*/
+    /*left: 100px; /*pushed to the right 100 pixels from where it normally is*/
+    /*position: fixed; /*stays fixed on the screen, doesn't move*/
+    /*right: 0px; /*right side of viewport*/
+    /*bottom: 0px; /*bottom side of viewport*/
+    /*position: sticky; /*similar to fixed, reserve scrolled space with initial element, same place until we scroll past it*/
+    position: static; /*Default position type*/
+    top: 100px;
+    left: 100px;
+}
+
+#box3
+{
+    width: 100px;
+    height: 100px;
+    background-color: rgb(236, 66, 66);
+    position: absolute; /*Also works with other things like fixed*/
+    top: 50px;
+    left: 50px;
+}

@@ -1,0 +1,120 @@
+
+/*For the glow effect*/
+body
+{
+    background-color: hsl(0, 0%, 12%);
+}
+
+img
+{
+    animation-name: slideLeft;
+    animation-duration: 2s; /*DO NOT FORGET THIS PART!!!*/
+    animation-iteration-count: 1;
+    animation-play-state: running;
+    animation-play-state: normal;
+    animation-timing-function: cubic-bezier(0, 1.38, 0.58, 1);
+}
+
+#box
+{
+    width: 250px;
+    height: 250px;
+    background-color: hsl(0, 100%, 62%);
+    font-size: 13em;
+    text-align: center;
+
+    /*Don't forget duration, doesn't work otherwise*/
+    /*animation-name: glow; /*Change this name to any of the animations listed below*/
+    /*animation-duration: 1s;
+    /*opacity: 0;/* Used with fadeIn*/
+    /*Changes iteration count*/
+    animation-iteration-count: 2; /*Set to: infinite; for it to go forever*/
+    animation-direction: reverse; /*By default it's normal, but can also set it to reverse, can also set it to alternate(switching between the 2), also alternate reverse*/
+    /*animation-play-state: paused; /*Pause the animation, by default it's running*/
+    /*Do a custom animation with inspect on the box, then click on the graph icon, and then copy and pasting the custom animation*/
+    animation-timing-function: cubic-bezier(0, 1.38, 0.58, 1); /*Normally starts fast, then goes slow (ease-in-out by default). Can be switched: to linear(same speed), steps(number) for how many frames*/
+}
+
+/*Only glows when hover (for :hover) over it*/
+#box:active /*When left click and hold*/
+{
+    animation-name: glow; /*Change this name to any of the animations listed below*/
+    animation-duration: 1s;
+}
+
+/*Create an animation using a keyframe rule*/
+/*Allows this to slide this from the right to the left*/
+@keyframes slideLeft
+{
+    /*Have possible values: to, from, percent*/
+    from{transform: translateX(100%)} /*translating 100% of the width of the element, 300% appears offscreen*/
+}
+
+@keyframes slideRight
+{
+    /*Have possible values: to, from, percent*/
+    to{transform: translateX(300%)} /*translating 100% of the width of the element, 300% appears offscreen*/
+}
+
+@keyframes slideUp
+{
+    /*Have possible values: to, from, percent*/
+    from{transform: translateY(300%)} /*translating 100% of the width of the element, 300% appears offscreen*/
+}
+
+@keyframes slideDown
+{
+    /*Have possible values: to, from, percent*/
+    to{transform: translateY(100%)} /*translating 100% of the width of the element, 300% appears offscreen*/
+}
+
+@keyframes rotate
+{
+    /*At 100%, what transformation do we want?*/
+    /*100% does it once, but 50% does it and reverts it back*/
+    /*It goes faster with the lower the percentage, but reverts back the same speed*/
+    50%{transform: rotateY(360deg)} /*Rotate Z for the xy place, no 3D!*/
+}
+
+@keyframes grow
+{
+    /*100% only grows then snaps back, 50% reverts it!*/
+    50%{transform: scale(2, 2)}
+}
+
+@keyframes shrink
+{
+    /*Shrinks it and reverts*/
+    50%{transform: scale(0.5, 0.5)}
+}
+
+@keyframes fade
+{
+    /*fades out and reverts back to being seen*/
+    /*Opacity = transparency*/
+    50%{opacity: 0;}
+}
+
+@keyframes fadeIn
+{
+    /*fades out and reverts back to being seen*/
+    /*Opacity = transparency*/
+    100%{opacity: 1;}
+}
+
+@keyframes colorChange
+{
+    /*Each percent is how much alloted time per color change*/
+    0%{background-color: hsl(0, 100%, 62%);}
+    20%{background-color: hsl(22, 87%, 61%);}
+    40%{background-color: hsl(67, 88%, 61%);}
+    60%{background-color: hsl(101, 88%, 56%);}
+    80%{background-color: hsl(212, 88%, 56%);}
+    100%{background-color: hsl(295, 90%, 56%);}
+}
+
+@keyframes glow
+{
+    /*Shadows the glowing effect*/
+    50%{box-shadow: 0px 0px 50px hsl(60, 100%, 50%);} /*box-shadow: Horizontal offset, Vertical offset, blur radius, color*/
+}

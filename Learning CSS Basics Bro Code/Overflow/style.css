@@ -1,0 +1,13 @@
+
+
+div
+{
+    border: 2px solid;
+    height: 75px;
+    /*overflow: hidden; /*Allow overflow to not happen, hides it*/
+    /*overflow: visible; /*Allow overflow to happen, shows it it*/
+    /*overflow: clip; /*Similar to clip, but used with below*/
+    /*overflow-clip-margin: 13px; /*Overflows 13 px*/
+    /*overflow: scroll; /*Horizontal and Vertical scroll bar, if not enough, scroll bar is still there it's just disabled*/
+    overflow: auto; /*Doesn't display scroll bar until you need it*/
+}

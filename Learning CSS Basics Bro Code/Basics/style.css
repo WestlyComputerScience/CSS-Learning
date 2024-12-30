@@ -1,0 +1,40 @@
+/*
+You can apply this style sheet to any HTML index.html webpage now :D
+*/
+
+body
+{
+    background-color: black;
+}
+h1
+{
+    color: lightgreen;
+}
+/*
+You need a # to follow an ID if referring to one, or just p for regular paragraph tags
+*/
+#p1
+{
+    color: lightgreen
+}
+#p2
+{
+    color: white
+}
+#p3
+{
+    color: lightblue
+}
+#p4
+{
+    color: orange
+}
+
+/*
+if you want to refer to a group of things as a class, use . instead of hashtag when referring to a class
+*/
+
+.lastParagraphs
+{
+    color:coral
+}

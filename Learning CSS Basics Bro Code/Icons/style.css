@@ -1,0 +1,43 @@
+
+.icons
+{
+    text-align: center;
+}
+
+.icons a
+{
+    text-decoration: none; /*Removes the weird underline when hyperlinking the icons*/
+    margin-right: 20px;
+}
+
+/*Note: can't have spaces, so replace them with a dot!*/
+/*This is how you edit icons btw*/
+.fa-solid.fa-user-secret.fa-fade.fa-5x
+{
+    color: hsl(0, 0%, 66%);
+}
+
+.fa-solid.fa-user-secret.fa-fade.fa-5x:hover /*Just making it so that when you hover over it it gets lighter color*/ /*Note: hard to tell with animations!*/
+{
+    color: hsla(0, 0%, 66%, 0.893);
+}
+
+.fa-sharp-duotone.fa-solid.fa-gear.fa-flip.fa-5x
+{
+    color: hsl(39, 100%, 50%);
+}
+
+.fa-sharp-duotone.fa-solid.fa-gear.fa-flip.fa-5x:hover /*Just making it so that when you hover over it it gets lighter color*/
+{
+    color: hsla(39, 100%, 50%, 0.938);
+}
+
+.fa-sharp-duotone.fa-solid.fa-microchip.fa-beat-fade.fa-5x
+{
+    color: hsl(180, 100%, 50%);
+}
+
+.fa-sharp-duotone.fa-solid.fa-microchip.fa-beat-fade.fa-5x:hover  /*Just making it so that when you hover over it it gets lighter color*/
+{
+    color: hsla(180, 100%, 50%, 0.904);
+}

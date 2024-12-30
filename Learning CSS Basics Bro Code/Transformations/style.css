@@ -1,0 +1,59 @@
+
+
+body
+{
+    margin: 0;
+}
+
+#box1
+{
+    width: 250px;
+    height: 250px;
+    border: 5px solid;
+    font-size: 13em;
+    text-align: center;
+    background-color: hsl(120, 100%, 70%);
+
+    /*transform: translateX(50px); /*Shifts right/left 50px, neg for left, can also use percents (based on width, 100% moves it 250px left)*/
+    /*transform: translateY(-50px); /*Moves element down/up*/
+    /*transform: translate(50px, 50px); /*Moves it by coordinate pairs*/
+    /* transform: rotateX(45deg); /*Rotates on X-axis*/
+    /*transform: rotateY(45deg); /*Rotates on Y-axis, 180 flips characters in reverse*/
+    /*transform: rotateZ(45deg); /*Shifts it circle like*/
+    /*transform: scaleX(1.5); /*1.1 = 110%, scales an object on a certain axis X or Y*/
+    /*transform: scaleY(1.5); /*1.1 = 110%, scales an object on a certain axis X or Y*/
+    /*transform: scale(1.5, 1.5); /*1.1 = 110%, scales an object, X and Y/*/
+    /*transform: skewX(45deg); /*Makes it a parralellogram, based on x-axis? (butchered that spelling lol)*/
+    /*transform: skewY(45deg); /*Makes it a parralellogram, based on y-axis? (butchered that spelling lol)*/
+    /*transform: skew(10deg, 10deg); /*Makes it a parralellogram, based on both-axis?*/
+
+    transform: translateX(100%) rotatez(90deg) scale(0.5); /*Can also apply more than 1 at a time*/
+}
+
+/*Can apply it to classes*/
+.box
+{
+    width: 250px;
+    height: 250px;
+    border: 5px solid;
+    font-size: 13em;
+    text-align: center;
+
+    transform: translate(100px, 0) rotateX(45deg) scale(1.2);
+}
+
+#box2
+{
+    background-color: hsl(13, 100%, 70%);
+}
+
+#box3
+{
+    background-color: hsl(224, 100%, 70%);
+}
+
+/*Basically can also apply it to images*/
+img
+{
+    transform: translate(0, 100px) rotateZ(180deg) scaleX(1.4);   
+}

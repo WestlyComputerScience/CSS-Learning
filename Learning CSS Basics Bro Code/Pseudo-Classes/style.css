@@ -1,0 +1,74 @@
+
+/*Pseudo class is the :____ after a mentioned class*/
+
+/*Now when you hover over the button, it changes!*/
+button:hover
+{
+    font-size: 1.1em;
+    background-color: hsla(120, 91%, 47%, 0.897);
+}
+
+/*Now when you click the button or hold it, it changes*/
+button:active
+{
+    font-size: 1.1em;
+    background-color: rgba(227, 24, 24, 0.922);
+}
+
+a:link
+{
+    color: red; /*Changes the color when pressed*/
+}
+
+/*When hovering over it, changes to green*/
+a:hover
+{
+    color: green;
+}
+
+/*Left click and hold, in the active state/visited state*/
+a:active
+{
+    color: black;
+    font-size: 1.1em;
+}
+
+/*When you visit a webpage and go back, the state changes to visited*/
+a:visited
+{
+    color: purple;
+}
+
+/*When you hover over a list item, it highlights it*/
+li:hover
+{
+    background-color: yellow;
+}
+
+/*Anything not hovered over is orange*/
+/*not(:___) psuedo class, anything not in that state*/
+li:not(:hover)
+{
+    background-color: orange;
+}
+
+/*Any element within nth-child(_) will be the child chosen of that color. Ex: the 3rd to top childe*/
+/*Can choose odd or even elements too!*/
+/*3n for every 3rd element*/
+/*Could even be 3n + 1*/
+li:nth-child(odd)
+{
+    background-color: red;
+}
+
+#greeting p
+{
+    background-color: rgb(62, 134, 242);
+    padding: 10px;
+    display: none; /*Makes it not visible*/
+}
+
+#greeting:hover p
+{
+    display: block; /*Display's p element when hovered over the text*/
+}

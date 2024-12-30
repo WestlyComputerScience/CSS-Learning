@@ -1,0 +1,18 @@
+
+body
+{
+    /*url is going to be a relative file path, or an absolute file path*/
+    background-image: url(ImagesBeingUsed/pexels-pixabay-302820.jpg);
+
+    /*Image stops repeating*/
+    background-repeat: no-repeat;
+
+    /*Centers it horizontally*/
+    background-position: center;
+
+    /*Does it scroll with the rest of the page or stay fixed?*/
+    background-attachment: fixed;
+
+    /*Takes up the entire website*/
+    background-size: cover;
+}

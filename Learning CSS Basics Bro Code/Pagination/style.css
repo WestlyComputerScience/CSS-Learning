@@ -1,0 +1,28 @@
+
+.pagination
+{
+    text-align: center;
+}
+
+.pagination a
+{
+    color: black;
+    text-decoration: none; /*Gets rid of the underlining*/
+    padding: 8px 15px;
+    display: inline-block; /*Adjust width and height of these elements*/
+}
+
+/*Within pagination class, within any anchor tags*/
+.pagination a.active
+{
+    background-color: rgb(30, 245, 30);
+    font-weight:  bold;
+    border-radius: 10px;
+}
+
+/*Within pagination class, within an anchor class, when you hover, within an achor class that doesn't have the ID active*/
+.pagination a:hover:not(.active)
+{
+    background-color: grey;
+    border-radius: 10px;
+}

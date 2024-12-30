@@ -1,0 +1,39 @@
+
+/*area outside of an element*/
+body
+{
+    margin: 0px;
+}
+
+.box
+{
+    border: 5px solid;
+    font-size: 5em;
+    width: 250px;
+    height: 250px;
+}
+
+/*can apply margin to all sides*/
+#box1
+{
+    background-color: red;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-right: 50px;
+    margin-left: 50px;
+
+    /*sticks to center*/
+    margin: auto;
+
+    /*or to do all at once
+    margin: 50px*/
+}
+
+#box2
+{
+    background-color: blue;
+    margin: 50px;
+
+    /*Sticks to the right hand side*/
+    margin-left: auto;
+}

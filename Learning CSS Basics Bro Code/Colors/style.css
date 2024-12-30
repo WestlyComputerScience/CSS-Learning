@@ -1,0 +1,30 @@
+
+body
+{
+    /* can use names, hexidecimal values, and RGB values*/
+    background-color: slategrey;
+}
+
+#p1
+{
+    color: tomato
+}
+
+#p2
+{
+    /*Note: rgb values start with rgb()*/
+    color: rgb(102, 222, 255) /*Nice color btw*/
+}
+
+#p3
+{
+    /*Note: hexidecimals start with #*/
+    color: #59ff5f
+}
+
+#p4
+{
+    /*In VS Code, you can hover over the box and select a color too*/
+    /*can click top bar for HSL(HUE, Saturation, Lightness) */
+    color: hsl(149, 86%, 47%);
+}

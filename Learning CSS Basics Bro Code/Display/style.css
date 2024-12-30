@@ -1,0 +1,25 @@
+
+
+#div
+{
+    background-color: red;
+    width: 100px;
+    height: 100px;
+    display: inline-block; /*behaves like both in a way, takes up it's space, but can be givin a width and a height*/
+    /* display: inline; ---- makes it not take up the space, more like a span*/
+    /* display: block; ---- makes it not take up the space, more like a div*/
+    /*display: hidden; /*Still takes up space, but hidden*/
+}
+
+#span
+{
+    background-color: blue;
+    /*Below code doesn't change the span*/
+    width: 100px;
+    height: 100px;
+
+    /*Allows it to change*/
+    display: inline-block;
+    /*display: none; /*erases element*/
+}
+

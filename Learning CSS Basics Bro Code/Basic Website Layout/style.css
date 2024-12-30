@@ -1,0 +1,85 @@
+
+*
+{
+    box-sizing: border-box; /*When you calculate the width, take in mind the padding*/
+}
+
+body
+{
+    margin: 0px;
+}
+
+header
+{
+    background-color: hsl(0, 0%, 85%);
+    text-align: center;
+    padding: 25px;
+}
+
+/*-------------------------------------------EXTRA--------------------------------------*/
+.navbar ul
+{
+    list-style-type: none; /*Removes bullet points*/
+    background-color: rgb(57, 55, 55);
+    padding: 0px;
+    margin: 0px;
+    overflow: hidden; /*To change to horizontal*/
+}
+
+.navbar a
+{
+    color: white;
+    text-decoration: none; /*Removes the underline*/
+    padding: 15px;
+    display: block;
+    text-align: center;
+}
+
+.navbar a:hover
+{
+    background-color: hwb(0 66% 34%);
+}
+
+.navbar li
+{
+    float: left; /*To change to horizontal*/
+}
+/*-------------------------------------------EXTRA--------------------------------------*/
+
+aside
+{
+    width: 20%; /*Only takes 20% of available space*/
+    float: left;
+    padding: 10px;
+}
+
+section
+{
+    width: 40%;
+    float: left;
+    padding: 10px;
+}
+
+article
+{
+    width: 40%;
+    float: left;
+    padding: 10px;
+}
+
+footer
+{
+    display: block;
+    clear: both; /*Gets rid of the floating*/
+    background-color: hsl(0, 0%, 85%);
+    text-align: center;
+    padding: 25px;
+}
+
+@media screen and (max-width:600px) /*If the width of a user's screen is 600px or below*/
+{
+    aside, section, article /*Switches them to be on top of each other*/
+    {
+        width: 100%;
+    }
+}

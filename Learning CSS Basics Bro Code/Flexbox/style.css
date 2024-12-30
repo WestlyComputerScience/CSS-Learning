@@ -1,0 +1,79 @@
+
+.container
+{
+    display: flex;
+    /*flex-direction: row;*/ /*By default it's set to row*/
+    /*flex-direction: row-reverse;*/ /*Another way of doing it*/
+    /*flex-direction: column;*/ /*Another way of doing it*/
+    /*flex-direction: column-reverse;*/ /*Another way of doing it*/
+
+
+    /*            Edits x plane           */
+    /*justify-content: flex-start; /*This by default*/
+    /*justify-content: flex-end; /*Shifts it to the right side*/
+    /*justify-content: center; /*Shifts it to the center*/
+    /*justify-content: space-between; /*Seperates it and spread it out evenly based on how much space allowed*/
+    /*justify-content: space-around; /*Now includes a little space at the edges, and does the same as space-between for the rest of it*/
+    /*justify-content: space-evenly; /*Spaces it evenly based on space of the page*/
+
+
+    border: 10px solid black;
+    height: 90vh; /*vh, view portal*/
+    /*             Edits y plane(cross axis)          */
+    /*align-items: flex-start; /*This by default*/
+    /*align-items: flex-end; /*Places them at end of container*/
+    /*align-items: center; /*Places them in the middle of the y-axis (cross axis)*/
+    /*align-items: baseline; /*The text is going to be aligned, all along a line!*/
+
+    /*flex-wrap: nowrap; /*This by default, squishes elements together to make them fit*/
+    /*flex-wrap: wrap; /*The elements will now wrap based on container size, pushed down if no room to make room.*/
+    /*flex-wrap: wrap-reverse; /*Wraps them from page down, right-left*/
+
+    /*   Flex Wrap is used with align content     */
+    /*align-content: flex-start; /*All of the space between the first and second row is now gone*/
+    /*align-content: flex-end; /*All of the space between the first and second row is now gone, but at the bottom of the box*/
+    /*align-content: flex-end; /*All of the space between the first and second row is now gone, but at the middle of the box*/
+    /*align-content: space-evenly; /*All of the space between the first and second row is now gone, but evenly cut into parts throughout the box on the y-axis*/
+    /*align-content: space-between; /*All of the space between the first and second row is now gone, but at the top and bottom of the box (most space between)*/
+
+
+    column-gap: 1em; /*Adds a gap between columns*/
+    row-gap: 1em; /*Adds a gap between rows*/
+}
+
+.box
+{
+    width: 150px;
+    height: 150px;
+    font-size: 8em;
+    text-align: center;
+    border-radius: 15px;
+}
+
+#box1
+{
+    background-color: hsl(0, 100%, 70%);
+    
+    /*align-self: start; /*Aligns it to the top, only this element*/
+    /*align-self: center; /*Aligns it to the center, only this element*/
+    align-self: end; /*Aligns it to the bottom, only this element*/
+    
+    /*order: 1; /*Makes the box go to the end*/
+    order: -1; /*Makes the box go to the front, default*/
+}
+
+#box2
+{
+    background-color: hsl(52, 100%, 70%);
+}
+
+#box3
+{
+    background-color: hsl(111, 100%, 70%);
+}
+
+#box4
+{
+    background-color: hsl(201, 100%, 70%);
+}
+

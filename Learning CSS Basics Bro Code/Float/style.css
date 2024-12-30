@@ -1,0 +1,21 @@
+
+body
+{
+    border: 3px solid;
+
+    /*Anything flowing will stay in the container, won't overflow and go outside the box*/
+    display: flow-root;
+}
+
+#img1
+{
+    /*everything on right of image*/
+    float: left;
+    margin-right: 10px;
+}
+
+#img2
+{
+    float: right;
+    margin-left: 10px;
+}

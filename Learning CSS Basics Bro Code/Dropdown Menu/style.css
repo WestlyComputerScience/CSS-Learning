@@ -1,0 +1,46 @@
+
+.Dropdown
+{
+    display: inline-block; /*Only activates when you hover over the button, not the white space next to it!*/
+}
+
+.Dropdown button
+{
+    background-color: rgb(158, 153, 153);
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer; /*Cursor changes to a hand when you hover over the button*/
+}
+
+.Dropdown a
+{
+    display: block;
+    color: black;
+    text-decoration: none; /*No underline*/
+    padding: 10px 15px;
+}
+
+.Dropdown .content
+{
+    display: none; /*Hides it*/
+    position: absolute;
+    background-color: rgb(178, 184, 185);
+    min-width: 100px;
+    box-shadow: 2px 2px 5px hsla(0, 0%, 0%, 0.801); /*Remember: horizontal, veritcal, blur amount, color*/
+}
+
+.Dropdown:hover .content
+{
+    display:block; /*Displays dropdown menu when hovered over*/
+}
+
+.Dropdown:hover button
+{
+    background-color: rgb(232, 224, 224); /*The button changes when hovered over*/
+}
+
+.Dropdown a:hover
+{
+    background-color: hsla(0, 0%, 100%, 0.879); /*When hover over buttons, it changes their color*/
+}

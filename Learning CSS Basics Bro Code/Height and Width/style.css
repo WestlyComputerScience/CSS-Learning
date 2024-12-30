@@ -1,0 +1,30 @@
+
+/* common convention to just not include padding and border when calculating height and width, * {} applies to all elements
+*
+{
+    box-sizing: border-box;
+}
+*/
+
+.Container
+{
+    background-color: rgba(84, 82, 82, 0.132);
+    height: 100vh;
+}
+
+.box
+{
+    background-color: white;
+    border: 2px solid;
+    padding: 25px; /*Has 25 pixels worth of padding between content and the border*/
+    box-sizing: border-box; /*Disregard any padding or borders when calculating height or width*/
+    height: auto; /*Calculted automatically*/
+    width: 50%; /*Takes up half of veiwport*/
+    float: left;
+    text-align: center;
+    max-width: 25%; /*Caps the width at 25%*/
+    min-width: 50%; /*Min width must be 75%*/
+
+    min-height: 50%; /*takes up to half of veiwport height, due to Container class*/
+    
+}

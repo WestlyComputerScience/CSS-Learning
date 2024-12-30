@@ -1,0 +1,52 @@
+
+/*Changes first letter*/
+h1::first-letter
+{
+    font-size: 2em; /*H in hello is bigger now*/
+    font-style: italic;
+}
+
+/*Changes first line*/
+p::first-line
+{
+    background-color: yellow;
+}
+
+/*Anything selected with our mouse in paragraph p, aka when you highlight to copy and paste*/
+p::selection
+{
+    color: rgb(79, 227, 25);
+    background-color: darkgrey;
+}
+
+/*Adds something before each list item*/
+/*Select the windows key, then press ;*/
+/*  windows ----> ; */
+#fruit li::before
+{
+    content: "✅";
+}
+
+/*adds something after each list item*/
+#Apple::after
+{
+    content: "🍎";
+}
+
+#Orange::after
+{
+    content: "🟠";
+}
+
+#Banana::after
+{
+    content: "🍌";
+}
+
+/*Changes the bullet point that orders a list*/
+#fruit li::marker
+{
+    content: "✔️";
+    font-size: 2em;
+}
+

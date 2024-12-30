@@ -1,0 +1,36 @@
+
+#container
+{
+    border: 2px solid;
+}
+
+/* Descendant is just the space between container and paragraph*/
+/*
+#container p
+{
+    background-color: yellow;
+}
+*/
+
+/*Use > for child, note that 3 isn't highlighted, it's a descendant and not a child!*/
+/*All children are descendants, but not all descendants are children*/
+/*
+#container > p
+{
+    background-color: yellow;
+}
+*/
+
+/* Use ~ to get siblings to container, both are from a body. If you wrapped them in a div, they're no longer siblings. In this case, 4 and 5 are siblings.*/
+#container ~ p
+{
+    background-color: yellow;
+}
+
+/*Use + for adjacent siblings. It's the next direct sibling, not all siblings. Whoever appears first, 4 appears closer than 5.*/
+#container + p
+{
+    background-color: yellow;
+}
+
+

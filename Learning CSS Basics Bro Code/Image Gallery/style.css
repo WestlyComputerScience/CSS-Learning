@@ -1,0 +1,27 @@
+
+.gallery
+{
+    display: inline-block;
+    border: 1px solid hsl(0, 0%, 60%);
+    margin: 5px;
+    text-align: center;
+    width: 200px;  /*Images can at most be this big!*/
+    height: 200px; /*Images can at most be this big!*/
+}
+
+.gallery .description
+{
+    padding: 10px;
+    text-align: center;
+}
+
+.gallery:hover
+{
+    border: 1px solid hsl(0, 0%, 20%); /*Changes border color when hovering over an image*/
+}
+
+.gallery img /*Changes size of images*/
+{
+    width: 100%;
+    height: 100%;
+}

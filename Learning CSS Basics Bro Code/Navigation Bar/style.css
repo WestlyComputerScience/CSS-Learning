@@ -1,0 +1,44 @@
+
+body
+{
+    margin: 0px;
+}
+
+main
+{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+h1
+{
+    text-align: center;
+}
+
+.navbar ul
+{
+    list-style-type: none; /*Removes bullet points*/
+    background-color: rgb(57, 55, 55);
+    padding: 0px;
+    margin: 0px;
+    overflow: hidden; /*To change to horizontal*/
+}
+
+.navbar a
+{
+    color: white;
+    text-decoration: none; /*Removes the underline*/
+    padding: 15px;
+    display: block;
+    text-align: center;
+}
+
+.navbar a:hover
+{
+    background-color: hwb(0 66% 34%);
+}
+
+.navbar li
+{
+    float: left; /*To change to horizontal*/
+}
